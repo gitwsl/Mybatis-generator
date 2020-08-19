@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Aug 10 10:53:39 CST 2020
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1597028019658
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.ow2.asm\:asm-util\:jar\:4.1 from/to central (https\://repo.maven.apache.org/maven2)\: Transfer failed for https\://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/4.1/asm-util-4.1.jar
