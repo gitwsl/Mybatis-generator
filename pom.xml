@@ -30,13 +30,6 @@
             <version>${mybatis.version}</version>
         </dependency>
         <dependency>
-            <groupId>....org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>5.2.1.RELEASE</version>
-            <type>pom</type>
-        </dependency>
-
-        <dependency>
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper</artifactId>
             <version>${mybatis.mapper.version}</version>
@@ -55,32 +48,32 @@
 
     <build>
 
-            <plugins>
-                <!-- 逆向工程插件,如果不配置插件，逆向工程无法运行 -->
-                <plugin>
-                    <groupId>org.mybatis.generator</groupId>
-                    <artifactId>mybatis-generator-maven-plugin</artifactId>
-                    <version>1.3.2</version>
-                    <configuration>
-                        <!-- 引入自己写得配置文件 -->
-                        <configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml</configurationFile>
-                        <overwrite>true</overwrite>
-                        <verbose>true</verbose>
-                    </configuration>
-                    <dependencies>
-                        <dependency>
-                            <groupId>mysql</groupId>
-                            <artifactId>mysql-connector-java</artifactId>
-                            <version>${mysql.version}</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>tk.mybatis</groupId>
-                            <artifactId>mapper</artifactId>
-                            <version>${mybatis.mapper.version}</version>
-                        </dependency>
-                    </dependencies>
-                </plugin>
-            </plugins>
+        <plugins>
+            <!-- 逆向工程插件,如果不配置插件，逆向工程无法运行 -->
+            <plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>1.3.2</version>
+                <configuration>
+                    <!-- 引入自己写得配置文件 -->
+                    <configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml</configurationFile>
+                    <overwrite>true</overwrite>
+                    <verbose>true</verbose>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>${mysql.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>tk.mybatis</groupId>
+                        <artifactId>mapper</artifactId>
+                        <version>${mybatis.mapper.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
 
     </build>
 
